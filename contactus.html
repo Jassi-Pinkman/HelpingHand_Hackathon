@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div class="right">
+          <a href="in.html">Home</a>
+        </div>
+      </header>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch with us</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="d218b000-d139-49d0-99f7-9e100403ff1d">
+            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            <textarea name="message" style="text-align: center;" placeholder="Your Message" height="100px" width="1000px" class="contact-inputs" required ></textarea>
+            <button type="submit">Submit </button>
+        </form>
+        <div class="contact-right">
+                <img src="help.png" alt="" height="400px" width="500px">
+ 
+        </div>
+    </div>
+</body>
+</html>

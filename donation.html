@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping hand donation Page</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Donate to Support Our Medical Facility</h1>
+            <p>Your contribution helps provide essential medical care and treatment to those in need.</p>
+        </div>
+    </header>
+
+    <section class="donation-section">
+        <div class="container">
+            <h2>Make a Donation</h2>
+            <p>Choose an amount to donate and help us make a difference in people's lives.</p>
+
+            <form action="#" method="POST">
+                <div class="amount">
+                    <label for="donation-amount">Donation Amount</label>
+                    <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter amount" required>
+                </div>
+
+                <div class="frequency">
+                    <label for="donation-frequency">Donation Frequency</label>
+                    <select id="donation-frequency" name="donation-frequency">
+                        <option value="one-time">One-time</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+
+                <div class="payment-options">
+                    <p>Choose Payment Method</p>
+                    <div class="payment-icons">
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                        <label for="credit-card"><a href="credit.html"><img src="credit.png" alt="Credit Card" ></a></label>
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                        <label for="credit-card"><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user&pli=1" target="_blank" rel="noopener noreferrer"><img src="gpay.png" alt="Credit Card" ></a></label>
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                        <label for="credit-card"><a href="https://paytm.com/"><img src="paytm.png" alt="Credit Card" ></a></label>
+
+
+                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                        <label for="paypal"><a href="https://www.paypal.com/in/home" target="_blank" rel="noopener noreferrer"><img src="payypal.png" alt="PayPal" style="width: 120px; height: 40px;"></a></label>
+                    </div>
+                </div>
+
+                <button type="submit" class="donate-button"><a href="than.html" style="color: aliceblue; text-decoration: none;">Donate Now</a></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medical Facility. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

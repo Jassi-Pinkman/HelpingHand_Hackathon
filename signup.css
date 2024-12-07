@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:poppins;
+    background: linear-gradient(120deg, #ffffff, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    width: 100%;
+    height: 75px;
+    background: rgb(239, 240, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+}
+.logo img {
+    width: 50px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right a {
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 14px;
+    color: black;
+    margin: 0 15px;
+  }
+  .right a:hover {
+    border-bottom: 0.5mm solid rgb(100, 100, 100);
+  }
+  a.primary {
+    background: rgb(8, 119, 229);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5mm;
+  }
+  a.primary:hover {
+    color: white;
+    background: rgb(4, 101, 199);
+    border: none;
+  }
+.signup-container {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right);
+}
+
+.form-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    animation: scaleUp 0.4s ease-in-out forwards;
+}
+.form-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    animation: scaleUp 0.4s ease-in-out forwards;
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Header */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input Styles */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #0072ff;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #00c6ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.6);
+}
+
+/* Checkbox Container Fix */
+.checkbox-container {
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Aligns the checkbox and label to the left */
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+.checkbox-container input {
+    margin-right: 0px;
+    cursor: pointer;
+    transform: scale(1.5); /* Increase the size of the checkbox */
+}
+
+.checkbox-container label {
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c6ff;
+}
+
+/* Login Link Styles */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-link a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #00c6ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}

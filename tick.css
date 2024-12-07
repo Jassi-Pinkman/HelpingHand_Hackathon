@@ -1,0 +1,9 @@
+htm,body
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(120deg, #ffffff, #c2e9fb);
+    display: flex;
+    align-items: center;
+    
+}

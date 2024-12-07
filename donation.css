@@ -1,0 +1,141 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background:linear-gradient(rgb(72, 106, 219),rgb(4, 41, 101));
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Donation Section */
+.donation-section {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.donation-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.amount,
+.frequency {
+    display: flex;
+    flex-direction: column;
+}
+
+.amount input,
+.frequency select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Payment Icons */
+.payment-options p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-icons input {
+    display: none;
+}
+
+.payment-icons label {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.payment-icons input:checked + label {
+    transform: scale(1.1);
+}
+
+.payment-icons img {
+    width: 40px;
+    height: auto;
+}
+
+/* Donate Button */
+.donate-button {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+.payment-icons {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    display: flex; /* Aligns the list items horizontally */
+}
+
+.payment-icons li {
+    margin-right: 20px; /* Adjust spacing between payment options */
+}

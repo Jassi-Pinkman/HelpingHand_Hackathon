@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check-Up Appointment</title>
+    <link rel="stylesheet" href="appoint.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Book a Check-Up Appointment</h1>
+            <p>Please fill in the details below to schedule your appointment</p>
+        </header>
+
+        <form id="appointment-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                    <option value="">Select a time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Purpose for appointment</label>
+                <textarea id="message" name="message" rows="4" placeholder="State Health related problems?"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn"><a href="gh.html" style="color: aliceblue; text-decoration: none;">Submit Appointment</a></button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
